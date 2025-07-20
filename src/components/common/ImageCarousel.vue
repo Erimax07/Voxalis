@@ -89,25 +89,25 @@ const autoSlideTimer = ref(null)
 // Sample images - replace these paths with your actual image paths
 const images = ref([
   {
-    src: '/images/slide1.png', // Place your images in the public/images folder
+    src: '/images/slide1.jpeg', // Place your images in the public/images folder
     alt: 'Beautiful landscape',
     title: 'Stunning Nature',
     description: 'Discover the beauty of natural landscapes'
   },
   {
-    src: '/images/slide2.png',
+    src: '/images/slide2.jpeg',
     alt: 'Modern architecture',
     title: 'Modern Design',
     description: 'Explore contemporary architectural marvels'
   },
   {
-    src: '/images/slide3.png',
+    src: '/images/slide3.jpeg',
     alt: 'City skyline',
     title: 'Urban Views',
     description: 'Experience the pulse of city life'
   },
   {
-    src: '/images/slide4.png',
+    src: '/images/slide4.jpeg',
     alt: 'Peaceful sunset',
     title: 'Golden Hour',
     description: 'Witness breathtaking sunset moments'
