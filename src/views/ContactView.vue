@@ -9,7 +9,7 @@
             <polyline points="22,6 12,13 2,6"></polyline>
           </svg>
         </div>
-        <h3 class="contact-title">Get In Touch</h3>
+        <h3 class="contact-title">Erreiche uns</h3>
       </div>
 
       <!-- Contact Items -->
@@ -25,15 +25,15 @@
             </div>
             <div class="contact-details">
               <h4 class="contact-label">Email</h4>
-              <p class="contact-value">email@example.com</p>
+              <p class="contact-value">{{ contact.email.primary }}</p>
             </div>
           </div>
-          <a href="mailto:email@example.com" class="contact-button email-button">
+          <a :href="mail" class="contact-button email-button">
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
               <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
               <polyline points="22,6 12,13 2,6"></polyline>
             </svg>
-            Send Email
+            Sende Email
           </a>
         </div>
 
@@ -46,11 +46,11 @@
               </svg>
             </div>
             <div class="contact-details">
-              <h4 class="contact-label">Phone</h4>
-              <p class="contact-value">+05890000111</p>
+              <h4 class="contact-label">Telefon</h4>
+              <p class="contact-value">{{ contact.phone.primary }}</p>
             </div>
           </div>
-          <a href="tel:+05890000111" class="contact-button phone-button">
+          <a :href="tel" class="contact-button phone-button">
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
               <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
             </svg>
@@ -70,7 +70,10 @@
 </template>
 
 <script setup>
-// No script needed for this simple component
+ import { contact } from '@/config/seiteConfig';
+
+ var mail = 'mailto:'+ contact.email.primary
+ var tel = 'tel:' + contact.phone.primary
 </script>
 
 <style scoped>

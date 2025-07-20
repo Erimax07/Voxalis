@@ -4,27 +4,26 @@
       <div class="footer-section">
         <h3 class="footer-logo">Voxalis</h3>
         <p class="footer-description">
-          Professional web development and social media management for small businesses.
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus numquam saepe sit, optio itaque harum repellendus voluptates ullam delectus! Et?
         </p>
       </div>
       
       <div class="footer-section">
         <h4>Services</h4>
         <ul class="footer-links">
-          <li><router-link to="/services">Website Development</router-link></li>
-          <li><router-link to="/services">Social Media Management</router-link></li>
-          <li><router-link to="/services">SEO Optimization</router-link></li>
-          <li><router-link to="/services">Content Creation</router-link></li>
+          <li><router-link to="/services">Websiten Entwicklung</router-link></li>
+          <li><router-link to="/services">Social Media Marketing</router-link></li>
+          <!-- <li><router-link to="/services">SEO Optimization</router-link></li> -->
+          <!-- <li><router-link to="/services">Content Creation</router-link></li> -->
         </ul>
       </div>
       
       <div class="footer-section">
         <h4>Company</h4>
         <ul class="footer-links">
-          <li><router-link to="/about">About Us</router-link></li>
-          <li><router-link to="/portfolio">Portfolio</router-link></li>
-          <li><router-link to="/blog">Blog</router-link></li>
-          <li><router-link to="/contact">Contact</router-link></li>
+          <li><router-link to="/about">Über</router-link></li>
+          <!-- <li><router-link to="/portfolio">Portfolio</router-link></li> -->
+          <li><router-link to="/contact">Kontakt</router-link></li>
         </ul>
       </div>
       
@@ -37,8 +36,8 @@
           <a href="#" class="social-link">Twitter</a>
         </div>
         <div class="contact-info">
-          <p>Email: info@voxalis.com</p>
-          <p>Phone: +1 (555) 123-4567</p>
+          <p>Email: {{ contact.email.primary }}</p>
+          <p>Telefon: {{ contact.phone.primary }}</p>
         </div>
       </div>
     </div>
@@ -47,8 +46,9 @@
       <div class="footer-bottom-content">
         <p>&copy; {{ currentYear }} Voxalis. All rights reserved.</p>
         <div class="legal-links">
-          <a href="#">Privacy Policy</a>
-          <a href="#">Terms of Service</a>
+          <a href="#">Datenschutzeinstellungen </a>
+          <a href="#">Nutzungsbedingungen</a>
+          <a href="#">Impressum</a>
         </div>
       </div>
     </div>
@@ -56,6 +56,7 @@
 </template>
 
 <script setup>
+import { contact } from '@/config/seiteConfig';
 import { computed } from 'vue'
 
 const currentYear = computed(() => new Date().getFullYear())
@@ -63,7 +64,7 @@ const currentYear = computed(() => new Date().getFullYear())
 
 <style scoped>
 .app-footer {
-  background-color: #000000;
+  background-color: black;
   color: #ffffff;
   margin-top: auto;
 }

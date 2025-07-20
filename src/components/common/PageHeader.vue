@@ -7,11 +7,10 @@
      
       <nav class="main-nav">
         <router-link to="/" class="nav-link">Home</router-link>
-        <router-link to="/services" class="nav-link">Services</router-link>
-        <router-link to="/portfolio" class="nav-link">Portfolio</router-link>
-        <router-link to="/about" class="nav-link">About</router-link>
-        <router-link to="/blog" class="nav-link">Blog</router-link>
-        <router-link to="/contact" class="nav-link">Contact</router-link>
+        <router-link to="/services" class="nav-link">Dienste</router-link>
+        <!-- <router-link to="/portfolio" class="nav-link">Portfolio</router-link> -->
+        <router-link to="/about" class="nav-link">Über</router-link>
+        <router-link to="/contact" class="nav-link">Kontakt</router-link>
       </nav>
     </div>
   </header>
@@ -23,15 +22,6 @@
 
 <style scoped>
 /* CSS Custom Properties für bessere Wartbarkeit */
-:root {
-  --primary-color: #000000;
-  --secondary-color: #ffffff;
-  --accent-color: #3498db;
-  --text-color: #2c3e50;
-  --line-color: #bdc3c7;
-  --border-radius: 8px;
-  --transition: all 0.3s ease;
-}
 
 .app-header {
   background-color: var(--secondary-color);

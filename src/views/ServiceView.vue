@@ -3,9 +3,9 @@
     <!-- Header Section -->
     <div class="services-header">
       <div class="header-content">
-        <h1 class="services-title">Our Services</h1>
+        <h1 class="services-title">Unsere Dienste</h1>
         <p class="services-subtitle">
-          Discover our comprehensive range of professional services designed to meet your needs
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non magni rerum iure cupiditate, neque modi expedita aut nobis ducimus beatae?
         </p>
       </div>
     </div>
@@ -57,7 +57,7 @@
             
             <div class="service-footer">
               <div class="service-action">
-                <span class="action-text">Learn More</span>
+                <span class="action-text">Zu den Details</span>
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                   <path d="M5 12h14M12 5l7 7-7 7"/>
                 </svg>
@@ -71,16 +71,16 @@
     <!-- Call to Action Section -->
     <div class="cta-section">
       <div class="cta-content">
-        <h2 class="cta-title">Ready to Get Started?</h2>
+        <h2 class="cta-title">Sind Sie bereit, loszulegen?</h2>
         <p class="cta-description">
-          Contact us today to discuss your specific needs and find the perfect solution
+          Kontaktieren Sie uns noch heute, um Ihre spezifischen Anforderungen zu besprechen und die perfekte Lösung zu finden
         </p>
         <RouterLink to="contact" class="cta-button">
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
             <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
             <polyline points="22,6 12,13 2,6"></polyline>
           </svg>
-          Get In Touch
+          Kontaktieren sie uns
         </RouterLink>
       </div>
     </div>
@@ -99,8 +99,8 @@ const services = ref([
     title: 'Web Entwicklung',
     link: '/services/webentwicklung',
     category: 'Development',
-    description: 'Create stunning, responsive websites and web applications using modern technologies. From simple landing pages to complex e-commerce platforms.',
-    image: '/images/programmingService.jpeg',
+    description: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non magni rerum iure cupiditate, neque modi expedita aut nobis ducimus beatae?.',
+    image: '/images/programmingService.jpg',
     features: ['Responsive Design', 'SEO Optimized', 'Fast Loading']
   },
   {
@@ -108,8 +108,8 @@ const services = ref([
     title: 'Social Media Marketing',
     link: '/services/socialmediamarketing',
     category: 'Marketing',
-    description: 'Design beautiful and intuitive mobile applications that provide exceptional user experiences across iOS and Android platforms.',
-    image: '/images/marketingService.jpeg',
+    description: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non magni rerum iure cupiditate, neque modi expedita aut nobis ducimus beatae?.',
+    image: '/images/marketingService.jpg',
     features: ['UI/UX Design', 'Prototyping', 'User Testing']
   }
 ])
