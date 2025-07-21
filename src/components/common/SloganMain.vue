@@ -5,7 +5,7 @@
         <div class="quote-mark">"</div>
         <h2 class="slogan-text">
           <span class="highlight">Jeder Betrieb</span> verdient eine 
-          <span class="highlight">professionelle, individuelle Webseite</span>, 
+          <span class="highlight" v-on:click="router.push('/services/webentwicklung')">, individuelle Webseite</span>, 
           die nicht nur gut aussieht, sondern 
           <span class="highlight">wirklich praktikabel ist</span> – 
           unabhängig vom Budget oder technischer Vorerfahrung.
@@ -18,6 +18,7 @@
 </template>
 
 <script setup>
+import router from '@/router'
 import { ref, onMounted } from 'vue'
 
 const sloganRef = ref(null)

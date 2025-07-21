@@ -2,5 +2,5 @@
 
 </script>
 <template>
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, aut obcaecati? Molestiae reiciendis dolore possimus at tempora nulla facere excepturi quibusdam fuga exercitationem harum inventore sapiente, blanditiis, quod ad officia.
+    Mit unserer umfassenden Erfahrung im Social Media Marketing entwickeln wir gemeinsam mit Ihnen eine individuelle Strategie, die das Wachstum Ihres Unternehmens gezielt fördert. Wir erstellen hochwertige Inhalte und übernehmen die Accountverwaltung – verständlich, effizient und transparent.
 </template>

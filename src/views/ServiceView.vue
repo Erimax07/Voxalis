@@ -5,7 +5,7 @@
       <div class="header-content">
         <h1 class="services-title">Unsere Dienste</h1>
         <p class="services-subtitle">
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non magni rerum iure cupiditate, neque modi expedita aut nobis ducimus beatae?
+          Webseiten mit Charakter und Social Media Marketing, das wirklich ankommt! Mit frischen Ideen und einem Gespür für Trends bringen wir Ihre Marke ins digitale Rampenlicht.
         </p>
       </div>
     </div>
@@ -146,6 +146,8 @@ const navigateToContact = () => {
 .header-content {
   max-width: 800px;
   margin: 0 auto;
+  display: flex;
+  flex-direction: column;
 }
 
 .services-title {
