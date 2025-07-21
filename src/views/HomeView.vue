@@ -1,8 +1,9 @@
 <script setup>
     import ImageCarousel from '@/components/common/ImageCarousel.vue';
+import SloganMain from '@/components/common/Sloganmain.vue';
 </script>
 <template>
-    Hi
-
+ 
+    <SloganMain />
     <ImageCarousel />
 </template>
