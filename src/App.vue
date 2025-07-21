@@ -16,7 +16,7 @@ import PageFooter from './components/common/PageFooter.vue';
 
 <style>
 /* CSS Custom Properties für bessere Wartbarkeit */
-:root {
+/* :root {
   --primary-color: #b0b0b0;
   --secondary-color: #ededed;
   --accent-color: #6faed9;
@@ -24,6 +24,44 @@ import PageFooter from './components/common/PageFooter.vue';
   --line-color: #bdc3c7;
   --border-radius: 8px;
   --transition: all 0.3s ease;
+} */
+
+:root {
+
+  --primary-color: #b0b0b0;
+  --secondary-color: #ededed;
+  --accent-color: #6faed9;
+  --text-color: #2c3e50;
+  --line-color: #bdc3c7;
+  --border-radius: 8px;
+  --transition: all 0.3s ease;
+
+  
+  --background-primary: #ffffff;
+  --background-secondary: #0a0a0a;
+  --background-tertiary: #ffffff;
+
+    --border-color: #d9d9d9;
+  --hover-color: #d1d1d1;
+
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+   --primary-color: #3d3d3d;
+  --secondary-color: #0f0f0f;
+  --accent-color: #5ba3d4;
+  --text-color: #f0f4f8;
+  --line-color: #2d2d2d;
+
+  --background-primary: #0a0a0a;
+  --background-secondary: #0a0a0a;
+  --background-tertiary: #212121;
+
+    --border-color: #2d2d2d;
+  --hover-color: #282828;
+      background: var(--background-primary);
+    }
 }
 
 * {
