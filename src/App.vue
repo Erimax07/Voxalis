@@ -16,14 +16,18 @@ import PageFooter from './components/common/PageFooter.vue';
 
 <style>
 /* CSS Custom Properties für bessere Wartbarkeit */
+
 /* :root {
+
+
   --primary-color: #b0b0b0;
   --secondary-color: #ededed;
   --accent-color: #6faed9;
-  --text-color: #2c3e50;
+  --text-color: #010101;
   --line-color: #bdc3c7;
   --border-radius: 8px;
   --transition: all 0.3s ease;
+
 } */
 
 :root {
@@ -36,7 +40,6 @@ import PageFooter from './components/common/PageFooter.vue';
   --border-radius: 8px;
   --transition: all 0.3s ease;
 
-  
   --background-primary: #ffffff;
   --background-secondary: #0a0a0a;
   --background-tertiary: #ffffff;
@@ -60,7 +63,8 @@ import PageFooter from './components/common/PageFooter.vue';
 
     --border-color: #2d2d2d;
   --hover-color: #282828;
-      background: var(--background-primary);
+    background: var(--background-primary);
+
     }
 }
 
@@ -68,6 +72,7 @@ import PageFooter from './components/common/PageFooter.vue';
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  background-color: var(--background-primary);
 }
 
 #app {
