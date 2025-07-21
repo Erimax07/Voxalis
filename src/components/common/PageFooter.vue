@@ -63,8 +63,10 @@ const currentYear = computed(() => new Date().getFullYear())
 </script>
 
 <style scoped>
+*{
+  background-color: var(--background-secondary);
+}
 .app-footer {
-  background-color: black;
   color: #ffffff;
   margin-top: auto;
 }

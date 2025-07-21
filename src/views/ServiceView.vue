@@ -5,7 +5,7 @@
       <div class="header-content">
         <h1 class="services-title">Unsere Dienste</h1>
         <p class="services-subtitle">
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non magni rerum iure cupiditate, neque modi expedita aut nobis ducimus beatae?
+          Webseiten mit Charakter und Social Media Marketing, das wirklich ankommt! Mit frischen Ideen und einem Gespür für Trends bringen wir Ihre Marke ins digitale Rampenlicht.
         </p>
       </div>
     </div>
@@ -77,7 +77,7 @@
         </p>
         <RouterLink to="contact" class="cta-button">
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+            <path d="M4 4h16c1.1 0 2 .9 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
             <polyline points="22,6 12,13 2,6"></polyline>
           </svg>
           Kontaktieren sie uns
@@ -128,24 +128,26 @@ const navigateToContact = () => {
 </script>
 
 <style scoped>
-
 .services-view {
   width: 100%;
   min-height: 100vh;
-  background: linear-gradient(135deg, var(--secondary-color) 0%, #f8f9fa 100%);
+  background: linear-gradient(135deg, var(--secondary-color) 0%, var(--background-tertiary) 100%);
 }
 
 /* Header Section */
 .services-header {
   padding: 4rem 2rem 2rem;
   text-align: center;
-  background: white;
+  background: var(--background-primary);
   border-bottom: 1px solid var(--line-color);
 }
 
 .header-content {
   max-width: 800px;
   margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+ justify-content: center;
 }
 
 .services-title {
@@ -153,7 +155,6 @@ const navigateToContact = () => {
   font-weight: 700;
   color: var(--text-color);
   margin: 0 0 1rem 0;
-  letter-spacing: -0.02em;
 }
 
 .services-subtitle {
@@ -180,7 +181,7 @@ const navigateToContact = () => {
 
 /* Service Island */
 .service-island {
-  background: white;
+  background: var(--primary-color);
   border-radius: calc(var(--border-radius) * 2);
   overflow: hidden;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
@@ -267,7 +268,7 @@ const navigateToContact = () => {
   display: inline-block;
   padding: 4px 12px;
   background: var(--primary-color);
-  color: white;
+  color: var(--background-primary);
   border-radius: var(--border-radius);
   font-size: 0.75rem;
   font-weight: 500;
@@ -346,8 +347,8 @@ const navigateToContact = () => {
 
 /* CTA Section */
 .cta-section {
-  background: var(--text-color);
-  color: white;
+  background: var(--primary-color);
+  color: var(--background-primary);
   padding: 4rem 2rem;
   text-align: center;
 }
@@ -376,19 +377,20 @@ const navigateToContact = () => {
   gap: 8px;
   padding: 12px 24px;
   background: var(--accent-color);
-  color: white;
+  color: var(--text-color);
   border: none;
   border-radius: var(--border-radius);
   font-size: 1rem;
   font-weight: 600;
   cursor: pointer;
   transition: var(--transition);
+  text-decoration: none;
 }
 
 .cta-button:hover {
-  background: #2980b9;
+  background: var(--hover-color);
   transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(52, 152, 219, 0.3);
+  box-shadow: 0 6px 20px rgba(111, 174, 217, 0.3);
 }
 
 /* Responsive Design */
