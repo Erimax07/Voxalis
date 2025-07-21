@@ -24,7 +24,7 @@
 /* CSS Custom Properties für bessere Wartbarkeit */
 
 .app-header {
-  background-color: var(--background-primary);
+  background-color: var(--secondary-color);
   border-bottom: 2px solid var(--line-color);
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   position: sticky;
@@ -33,7 +33,6 @@
 }
 
 .header-content {
-  background-color: var(--background-primary);
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 2rem;
@@ -50,7 +49,7 @@
 }
 
 .logo-link {
-  color: var(--text-color);
+  color: var(--primary-color);
   text-decoration: none;
   transition: var(--transition);
 }
