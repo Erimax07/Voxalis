@@ -16,14 +16,20 @@ import PageFooter from './components/common/PageFooter.vue';
 
 <style>
 /* CSS Custom Properties für bessere Wartbarkeit */
+<<<<<<< HEAD
 /* :root {
+=======
+:root {
+
+>>>>>>> main
   --primary-color: #b0b0b0;
   --secondary-color: #ededed;
   --accent-color: #6faed9;
-  --text-color: #2c3e50;
+  --text-color: #010101;
   --line-color: #bdc3c7;
   --border-radius: 8px;
   --transition: all 0.3s ease;
+<<<<<<< HEAD
 } */
 
 :root {
@@ -35,6 +41,8 @@ import PageFooter from './components/common/PageFooter.vue';
   --line-color: #bdc3c7;
   --border-radius: 8px;
   --transition: all 0.3s ease;
+=======
+>>>>>>> main
 
   
   --background-primary: #ffffff;
@@ -60,7 +68,11 @@ import PageFooter from './components/common/PageFooter.vue';
 
     --border-color: #2d2d2d;
   --hover-color: #282828;
+<<<<<<< HEAD
       background: var(--background-primary);
+=======
+
+>>>>>>> main
     }
 }
 
@@ -68,6 +80,7 @@ import PageFooter from './components/common/PageFooter.vue';
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  background-color: var(--background-primary);
 }
 
 #app {

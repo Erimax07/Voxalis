@@ -211,7 +211,7 @@ onUnmounted(() => {
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
-  background: var(--secondary-color);
+  background: var(--background-primary);
   border-radius: var(--border-radius);
   overflow: hidden;
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
@@ -296,10 +296,11 @@ onUnmounted(() => {
   color: var(--text-color);
   backdrop-filter: blur(10px);
   z-index: 10;
+  background-color: var(--background-primary);
 }
 
 .nav-arrow:hover {
-  background: white;
+  background-color: var(--background-primary);
   color: var(--accent-color);
   transform: translateY(-50%) scale(1.1);
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
