@@ -4,7 +4,7 @@
       <div class="slogan-content">
         <h2 class="slogan-text">
           <span class="highlight">Jeder Betrieb</span> verdient eine 
-          <span class="highlight" v-on:click="router.push('/services/webentwicklung')">schöne, individuelle Webseite</span>, 
+          <a href="#main-services-view-link" class="highlight-a">schöne, individuelle Webseite</a>, 
           die nicht nur gut aussieht, sondern 
           <span class="highlight">wirklich praktikabel ist</span> – 
           unabhängig vom Budget oder technischer Vorerfahrung.
@@ -113,8 +113,6 @@ onMounted(() => {
 }
 
 .highlight {
-  color: var(--accent-color);
-  font-weight: 500;
   position: relative;
 }
 
@@ -125,8 +123,12 @@ onMounted(() => {
   left: 0;
   width: 0;
   height: 2px;
-  background: linear-gradient(90deg, var(--accent-color), transparent);
   animation: underline-grow 0.8s ease forwards;
+}
+
+.highlight-a{
+  color: var(--accent-color);
+  text-decoration: none;
 }
 
 .animate-in .highlight:nth-child(1)::after {

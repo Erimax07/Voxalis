@@ -101,7 +101,7 @@ const services = ref([
     category: 'Development',
     description: 'Wir entwickeln gemeinsam mit Ihnen eine maßgeschneiderte, professionelle Webseite, die den Charakter Ihres Unternehmens widerspiegelt. In einfacher, partnerschaftlicher Zusammenarbeit schaffen wir einen digitalen Auftritt, der wirkt und begeistert. Zudem übernehmen wir die Verwaltung der Webseite.“ oder „Ihr Unternehmen hat Persönlichkeit – und das soll man sehen! Mit Ihnen gemeinsam programmieren wir eine individuelle Webseite, die Ihren wahren Charakter zeigt. Ganz unkompliziert und mit einem echten Blick fürs Detail. Zudem übernehmen wir die Verwaltung der Webseite.',
     image: '/images/programmingService.jpg',
-    features: ['Responsive Design', 'SEO Optimized', 'Fast Loading']
+    features: ['Ansprechendes Design', 'Einfache Änderungen']
   },
   {
     id: 2,
@@ -110,7 +110,7 @@ const services = ref([
     category: 'Marketing',
     description: 'Mit unserer umfassenden Erfahrung im Social Media Marketing entwickeln wir gemeinsam mit Ihnen eine individuelle Strategie, die das Wachstum Ihres Unternehmens gezielt fördert. Wir erstellen hochwertige Inhalte und übernehmen die Accountverwaltung – verständlich, effizient und transparent.',
     image: '/images/marketingService.jpg',
-    features: ['UI/UX Design', 'Prototyping', 'User Testing']
+    features: []
   }
 ])
 
