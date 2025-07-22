@@ -21,6 +21,7 @@
       <div class="footer-section">
         <h4>Company</h4>
         <ul class="footer-links">
+          <li><router-link to="/">Home</router-link></li>
           <li><router-link to="/about">Über</router-link></li>
           <!-- <li><router-link to="/portfolio">Portfolio</router-link></li> -->
           <li><router-link to="/contact">Kontakt</router-link></li>

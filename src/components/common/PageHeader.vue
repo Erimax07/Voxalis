@@ -6,11 +6,11 @@
       </h1>
      
       <nav class="main-nav">
-        <router-link to="/" class="nav-link">Home</router-link>
-        <router-link to="/services" class="nav-link">Dienste</router-link>
+        <router-link  to="/"  class="nav-link">Home</router-link>
+        <router-link  to="/services" class="nav-link">Dienste</router-link>
         <!-- <router-link to="/portfolio" class="nav-link">Portfolio</router-link> -->
-        <router-link to="/about" class="nav-link">Über</router-link>
-        <router-link to="/contact" class="nav-link">Kontakt</router-link>
+        <router-link  to="/about" class="nav-link">Über</router-link>
+        <router-link  to="/contact" class="nav-link">Kontakt</router-link>
       </nav>
     </div>
   </header>

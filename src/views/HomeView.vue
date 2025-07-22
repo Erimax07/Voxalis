@@ -209,6 +209,7 @@ const socialFeaturesSection = ref(null)
 
 
 onMounted(() => {
+    scroll(0,0);
   const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
