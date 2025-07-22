@@ -1,5 +1,5 @@
 <template>
-  <section  class="slogan-section">
+  <section  class="slogan-section" ref="sloganRef">
     <div class="container">
       <div class="slogan-content">
         <h2 class="slogan-text">
