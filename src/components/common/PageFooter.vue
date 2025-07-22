@@ -75,7 +75,7 @@ const currentYear = computed(() => new Date().getFullYear())
 }
 
 .footer-content {
-  max-width: 1200px;
+  max-width: var(--max-width);
   margin: 0 auto;
   padding: 3rem 2rem 2rem;
   display: grid;
@@ -152,7 +152,7 @@ const currentYear = computed(() => new Date().getFullYear())
 }
 
 .footer-bottom-content {
-  max-width: 1200px;
+  max-width: var(--max-width);
   margin: 0 auto;
   padding: 0 2rem;
   display: flex;

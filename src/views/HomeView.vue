@@ -19,7 +19,7 @@
             <div class="container">
                 <div class="hero-content">
                     <h1 class="hero-title">
-                        Professionelle Webseiten für kleine Unternehmen
+                        Professionelle Webseiten für kleine Unternehmen und Vereine
                     </h1>
 
                     <div class="hero-actions">
@@ -57,7 +57,7 @@
         <!-- Features Overview -->
         <section ref="featuresSection" class="features-section" id="features-section-scroll">
             <div class="container">
-                <h2 class="section-title">Was wir für Ihr Unternehmen tun</h2>
+                <h2 class="section-title">Was wir für Ihr Unternehmen und Vereine tun</h2>
                 <div class="features-grid">
                     <div v-for="feature in features" :key="feature.id" class="feature-card"
                         :class="{ 'animate': isVisible }">
@@ -119,7 +119,7 @@
             <div class="container">
                 <div class="hero-content">
                     <h1 class="hero-title">
-                        Social Media Marketing für lokale Unternehmen
+                        Social Media Marketing für lokale Unternehmen und Vereine
                     </h1>
                     <p class="hero-slogan">
                         Erreichen Sie mehr Kunden durch professionelle Social Media Präsenz. 
@@ -549,7 +549,7 @@ const observerCallback = (entries) => {
 }
 
 .container {
-    max-width: 1200px;
+  max-width: var(--max-width);
     margin: 0 auto;
     padding: 0 20px;
 }
@@ -876,7 +876,7 @@ const observerCallback = (entries) => {
 }
 
 .container {
-    max-width: 1200px;
+  max-width: var(--max-width);
     margin: 0 auto;
     padding: 0 20px;
 }

@@ -5,7 +5,7 @@ import PageFooter from './components/common/PageFooter.vue';
 </script>
 
 <template>
-  <div id="app">
+  <div id="%">
     <PageHeader />
     <main class="main-content">
       <RouterView />
@@ -41,8 +41,10 @@ import PageFooter from './components/common/PageFooter.vue';
   --background-secondary: #0a0a0a;
   --background-tertiary: #ffffff;
 
-    --border-color: #d9d9d9;
+  --border-color: #d9d9d9;
   --hover-color: #d1d1d1;
+
+  --max-width: 1200px;
 
 }
 
@@ -73,6 +75,7 @@ html {
   scroll-behavior: smooth;
 }
 
+
 #app {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
   line-height: 1.6;
@@ -91,11 +94,12 @@ html {
   z-index: 100;
 }
 .main{
-  min-height: 80hv;
+  min-height: 90hv;
+  min-width: none;
 }
 
 .header-content {
-  max-width: 1200px;
+  max-width: var(--max-width);
   margin: 0 auto;
   padding: 0 2rem;
   min-height: 70px;
@@ -148,11 +152,17 @@ html {
 
 .main-content {
   flex: 1;
-  max-width: 1200px;
+  max-width: var(--max-width);
   margin: 0 auto;
   padding: 2rem;
   width: 100%;
 }
+@media (min-width: 2000px) {
+    :root{
+        --max-width: 1700px;
+    }
+}
+
 
 /* Responsive Design */
 @media (max-width: 768px) {
