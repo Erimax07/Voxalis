@@ -3,11 +3,11 @@
     <div class="container">
       <div class="slogan-content">
         <h2 class="slogan-text">
-          <span class="highlight">Jeder Betrieb</span> verdient eine 
+          <strong>Jeder Betrieb</strong> verdient eine 
           <a href="#main-services-view-link" class="highlight-a">schöne, individuelle Webseite</a>, 
-          die nicht nur gut aussieht, sondern 
-          <span class="highlight">wirklich praktikabel ist</span> – 
-          unabhängig vom Budget oder technischer Vorerfahrung.
+          die nicht nur professionell aussieht, sondern 
+          <strong>wirklich praktikabel</strong> ist - 
+          <!-- unabhängig vom Budget oder technischer Vorerfahrung. -->Ja
         </h2>
       </div>
       <div class="accent-line"></div>

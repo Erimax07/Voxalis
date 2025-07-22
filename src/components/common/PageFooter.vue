@@ -4,15 +4,15 @@
       <div class="footer-section">
         <h3 class="footer-logo">Voxalis</h3>
         <p class="footer-description">
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus numquam saepe sit, optio itaque harum repellendus voluptates ullam delectus! Et?
+          Jedes Betrieb verdient eine professionelle, individuelle Webseite, die nicht nur gut aussieht, sondern wirklich zielführend ist- unabhängig vom Budget oder technischer Vorerfahrung
         </p>
       </div>
       
       <div class="footer-section">
         <h4>Services</h4>
         <ul class="footer-links">
-          <li><router-link to="/services">Websiten Entwicklung</router-link></li>
-          <li><router-link to="/services">Social Media Marketing</router-link></li>
+          <li><router-link to="/services/webentwicklung">Websiten Entwicklung</router-link></li>
+          <li><router-link to="/services/socialmediamarketing">Social Media Marketing</router-link></li>
           <!-- <li><router-link to="/services">SEO Optimization</router-link></li> -->
           <!-- <li><router-link to="/services">Content Creation</router-link></li> -->
         </ul>
@@ -28,16 +28,16 @@
       </div>
       
       <div class="footer-section">
-        <h4>Connect</h4>
+        <router-link to="/contact" class="no-decoration"><h4>Kontakt</h4></router-link>
         <div class="social-links">
-          <a href="#" class="social-link">Facebook</a>
+          <!-- <a href="#" class="social-link">Facebook</a>
           <a href="#" class="social-link">Instagram</a>
           <a href="#" class="social-link">LinkedIn</a>
-          <a href="#" class="social-link">Twitter</a>
+          <a href="#" class="social-link">Twitter</a> -->
         </div>
         <div class="contact-info">
-          <p>Email: {{ contact.email.primary }}</p>
-          <p>Telefon: {{ contact.phone.primary }}</p>
+          <router-link to="/contact" class="no-decoration"><p>Email: {{ contact.email.primary }}</p></router-link>
+          <router-link to="/contact" class="no-decoration"><p>Telefon: {{ contact.phone.primary }}</p></router-link>
         </div>
       </div>
     </div>
@@ -63,6 +63,11 @@ const currentYear = computed(() => new Date().getFullYear())
 </script>
 
 <style scoped>
+
+.no-decoration{
+  text-decoration: none;
+}
+
 .app-footer {
   background-color: black;
   color: #ffffff;

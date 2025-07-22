@@ -77,57 +77,9 @@
             </div>
         </section>
 
-        <!-- Platform Coverage -->
-        <section class="platforms-section">
-            <div class="container">
-                <div class="platforms-content">
-                    <div class="platforms-text">
-                        <h2 class="section-title">Auf allen wichtigen Plattformen</h2>
-                        <div class="platforms-grid">
-                            <div v-for="platform in platforms" :key="platform.name" class="platform-card"
-                                 :style="{ backgroundColor: platform.color }">
-                                <span class="platform-icon">{{ platform.icon }}</span>
-                                <span class="platform-name">{{ platform.name }}</span>
-                            </div>
-                        </div>
-                        <router-link to="/social-media-services" class="cta-button primary">
-                            Social Media Strategie erstellen
-                        </router-link>
-                    </div>
-                    <div class="platforms-visual">
-                        <div class="engagement-chart">
-                            <h3>Ihre Reichweite wächst</h3>
-                            <div class="chart-bars">
-                                <div v-for="(bar, index) in chartData" :key="index" class="chart-bar"
-                                     :style="{ height: bar.height + '%', backgroundColor: bar.color, animationDelay: index * 0.1 + 's' }">
-                                    <span class="bar-label">{{ bar.label }}</span>
-                                </div>
-                            </div>
-                            <div class="chart-labels">
-                                <span>Woche 1</span>
-                                <span>Woche 4</span>
-                                <span>Woche 8</span>
-                                <span>Woche 12</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+        
 
-        <!-- Success Stories -->
-        <section class="success-section">
-            <div class="container">
-                <h2 class="section-title">Social Media Erfolge</h2>
-                <div class="success-grid">
-                    <div v-for="success in successStories" :key="success.id" class="success-card">
-                        <div class="success-icon">{{ success.icon }}</div>
-                        <div class="success-metric">{{ success.metric }}</div>
-                        <div class="success-description">{{ success.description }}</div>
-                    </div>
-                </div>
-            </div>
-        </section>
+        
     </div>
 </template>
 
@@ -154,7 +106,7 @@ const socialFeatures = reactive([
         title: 'Content Creation',
         description: 'Professionelle Posts, Stories und Videos für alle sozialen Netzwerke',
         gradient: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
-        stats: '+150% Engagement'
+        stats: 'iWHUERFGIAwhg'
     },
     {
         id: 2,
