@@ -33,7 +33,7 @@
 }
 
 .header-content {
-  max-width: var(--max-Width);
+  max-width: var(50px);
   margin: 0 auto;
   padding: 0 2rem;
   min-height: 70px;

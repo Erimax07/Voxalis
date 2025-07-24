@@ -89,7 +89,7 @@
 
 <script setup>
 import router from '@/router'
-import { ref } from 'vue'
+import { onMounted, ref } from 'vue'
 import { RouterLink } from 'vue-router'
 
 // Services data - replace with your actual services
@@ -125,6 +125,7 @@ const navigateToService = (serviceId) => {
 const navigateToContact = () => {
 
 }
+
 </script>
 
 <style scoped>
