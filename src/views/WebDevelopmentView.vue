@@ -69,7 +69,7 @@ const processSteps = [
     {
         step: '2',
         title: 'Konzeption',
-        description: 'Gemeinsame Entwicklung der Webseiten-Struktur'
+        description: 'Entwicklung der Webseiten-Struktur'
     },
     {
         step: '3',
@@ -103,9 +103,9 @@ function toContact(){
                     <p class="hero-subtitle">Ihre digitale Visitenkarte mit Persönlichkeit</p>
                     <div class="hero-description">
                         <p>
-                            Ihr Unternehmen hat Persönlichkeit – und das soll man sehen! Mit Ihnen gemeinsam
+                            !Ihr Unternehmen / Verein hat Persönlichkeit – und das soll man sehen! Mit Ihnen gemeinsam
                             programmieren wir eine individuelle Webseite, die Ihren wahren Charakter zeigt. Ganz
-                            unkompliziert und mit einem echten Blick fürs Detail.
+                            unkompliziert und mit einem echten Blick fürs Detail.!
                         </p>
                         <p>
                             <strong>Zudem übernehmen wir die Verwaltung der Webseite.</strong>
@@ -180,12 +180,6 @@ function toContact(){
             <div class="container">
                 <div class="benefits-grid">
                     <div class="benefit-card">
-                        <div class="benefit-icon">🤝</div>
-                        <h3>Partnerschaftlich</h3>
-                        <p>Echte Zusammenarbeit auf Augenhöhe – Ihre Ideen sind der Grundstein unserer gemeinsamen
-                            Arbeit.</p>
-                    </div>
-                    <div class="benefit-card">
                         <div class="benefit-icon">🔍</div>
                         <h3>Detailverliebt</h3>
                         <p>Jedes Element wird mit Sorgfalt gestaltet – von der Farbauswahl bis zur Benutzerführung.</p>
@@ -211,7 +205,7 @@ function toContact(){
                     <h2>Bereit für Ihre neue Webseite?</h2>
                     <p>Lassen Sie uns gemeinsam eine Webseite entwickeln, die Ihr Unternehmen perfekt repräsentiert.</p>
                     <div class="cta-buttons">
-                        <button class="cta-button primary">Projekt besprechen</button>
+                        <button class="cta-button primary" v-on:click="toContact()">Projekt besprechen</button>
                         <!-- <button class="cta-button secondary">Portfolio ansehen</button> -->
                     </div>
                 </div>

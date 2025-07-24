@@ -265,7 +265,7 @@ function toContact(){
                     <p>Lassen Sie uns gemeinsam eine Strategie entwickeln, die Ihr Unternehmen online zum Strahlen
                         bringt.</p>
                     <div class="cta-buttons">
-                        <button class="cta-button primary">Strategie-Gespräch vereinbaren</button>
+                        <button class="cta-button primary" v-on:click="toContact()">Strategie-Gespräch vereinbaren</button>
                     </div>
                 </div>
             </div>

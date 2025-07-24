@@ -3,11 +3,11 @@
     <div class="container">
       <div class="slogan-content">
         <h2 class="slogan-text">
-          <strong>Jeder Betrieb</strong> verdient eine 
-          <a href="#main-services-view-link" class="highlight-a">schöne, individuelle Webseite</a>, 
-          die nicht nur professionell aussieht, sondern 
-          <strong>wirklich praktikabel</strong> ist - 
-          <!-- unabhängig vom Budget oder technischer Vorerfahrung. -->Ja
+          <strong>Jeder</strong> verdient eine 
+          <a href="#main-services-view-link" class="highlight-a">professionelle und individuelle Webseite</a>, 
+          die nicht nur ansprechend aussieht, sondern 
+          <strong>wirklich zielführend</strong> ist. 
+          <!-- unabhängig vom Budget oder technischer Vorerfahrung. -->
         </h2>
       </div>
       <div class="accent-line"></div>
@@ -24,7 +24,7 @@
 
                     <div class="hero-actions">
                         <router-link to="/services" class="cta-button primary" @click="trackServiceClick">
-                            Unsere Services entdecken
+                            Unsere Dienste entdecken
                         </router-link>
                         <a href="#features-section-scroll" class="cta-button secondary">
 
@@ -57,7 +57,7 @@
         <!-- Features Overview -->
         <section ref="featuresSection" class="features-section" id="features-section-scroll">
             <div class="container">
-                <h2 class="section-title">Was wir für Ihr Unternehmen und Vereine tun</h2>
+                <h2 class="section-title">Was wir für Ihr Sie anbieten</h2>
                 <div class="features-grid">
                     <div v-for="feature in features" :key="feature.id" class="feature-card"
                         :class="{ 'animate': isVisible }">
@@ -69,8 +69,8 @@
                     </div>
                 </div>
                 <div class="features-cta">
-                    <router-link to="/services/webentwicklung" class="services-link" @click="trackServiceClick">
-                        Alle Services im Detail ansehen
+                    <router-link to="/services" class="services-link" @click="trackServiceClick">
+                        Alle Dienste im Detail ansehen
                         <span class="arrow">→</span>
                     </router-link>
                 </div>
@@ -93,22 +93,6 @@
                             Jetzt Services ansehen
                         </router-link>
                     </div>
-                    <div class="why-choose-visual">
-                        <div class="stats-card">
-                            <div class="stat">
-                                <span class="stat-number">!100+</span>
-                                <span class="stat-label">!Zufriedene Kunden</span>
-                            </div>
-                            <div class="stat">
-                                <span class="stat-number">!24/7</span>
-                                <span class="stat-label">!Support</span>
-                            </div>
-                            <div class="stat">
-                                <span class="stat-number">!30 Tage</span>
-                                <span class="stat-label">!Geld-zurück-Garantie</span>
-                            </div>
-                        </div>
-                    </div>
                 </div>
             </div>
         </section>
@@ -127,8 +111,8 @@
                     </p>
 
                     <div class="hero-actions">
-                        <router-link to="/social-media-services" class="cta-button primary" @click="trackSocialMediaClick">
-                            Social Media Services
+                        <router-link to="/service" class="cta-button primary" @click="trackSocialMediaClick">
+                            Unsere Dienste entdecken
                         </router-link>
                         <a href="#social-features-section" class="cta-button secondary">
                             Mehr erfahren
@@ -178,13 +162,13 @@
                         <h3 class="feature-title">{{ feature.title }}</h3>
                         <p class="feature-description">{{ feature.description }}</p>
                         <div class="feature-stats" v-if="feature.stats">
-                            <span class="stat-highlight">{{ feature.stats }}</span>
+                            <!-- <span class="stat-highlight">{{ feature.stats }}</span> -->
                         </div>
                     </div>
                 </div>
                 <div class="features-cta">
-                    <router-link to="/services/socialmediamarketing" class="services-link" @click="trackSocialMediaClick">
-                        Alle Social Media Services ansehen
+                    <router-link to="/services" class="services-link" @click="trackSocialMediaClick">
+                        Alle Dienste im Detail ansehen 
                         <span class="arrow">→</span>
                     </router-link>
                 </div>
@@ -262,25 +246,25 @@ const features = reactive([
         id: 2,
         icon: '📃',
         title: 'Eigene Anpassung',
-        description: 'Wir sorgen dafür, dass sie ihre eigene Wepseite verwalten und anpassen können.'
+        description: 'Wir sorgen dafür, dass sie ihre eigene Webseite verwalten und anpassen können.'
     },
     {
         id: 3,
         icon: '⚡',
         title: 'Schnell & Sicher',
-        description: 'Blitzschnelle Ladezeiten und höchste Sicherheitsstandards'
+        description: 'Blitzschnelle Ladezeiten und moderne Sicherheitsstandards'
     },
-    {
-        id: 4,
-        icon: '🚀',
-        title: 'SEO-Optimiert',
-        description: 'Bessere Sichtbarkeit bei Google und anderen Suchmaschinen'
-    },
+    // {
+    //     id: 4,
+    //     icon: '🚀',
+    //     title: 'SEO-Optimiert',
+    //     description: 'Bessere Sichtbarkeit bei Google und anderen Suchmaschinen'
+    // },
     {
         id: 5,
         icon: '💰',
         title: 'Fair & Transparent',
-        description: 'Klare Preise ohne versteckte Kosten für jedes Budget'
+        description: 'Klare Preise ohne versteckte Kosten'
     },
     {
         id: 6,
@@ -345,7 +329,7 @@ const socialFeatures = reactive([
         id: 6,
         icon: '🎨',
         title: 'Brand Design',
-        description: 'Einheitliches Design für alle Plattformen - Ihre Marke im Fokus',
+        description: 'Einheitliches Design für alle Plattformen - Ihr Unternehmen / Verein im Fokus',
         gradient: 'linear-gradient(135deg, #a8edea 0%, #fed6e3 100%)',
         stats: 'Wiedererkennungswert'
     }
@@ -620,7 +604,7 @@ const observerCallback = (entries) => {
 
 .cta-button.primary {
     background: var(--primary-color);
-    color: white;
+    color: black;
     box-shadow: 0 4px 15px rgba(180, 153, 153, 0.3);
 }
 
@@ -820,8 +804,9 @@ const observerCallback = (entries) => {
 }
 
 .why-choose-content {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     gap: 80px;
     align-items: center;
 }
@@ -847,30 +832,7 @@ const observerCallback = (entries) => {
     font-size: 1.2rem;
 }
 
-.stats-card {
-    background: white;
-    padding: 40px;
-    border-radius: var(--border-radius);
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-    gap: 30px;
-    text-align: center;
-}
 
-.stat-number {
-    display: block;
-    font-size: 2.5rem;
-    font-weight: 700;
-    color: var(--primary-color);
-    margin-bottom: 5px;
-}
-
-.stat-label {
-    font-size: 0.9rem;
-    color: var(--text-color);
-    opacity: 0.8;
-}
 
 .social-media-view {
     min-height: 100vh;

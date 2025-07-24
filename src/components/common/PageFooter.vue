@@ -4,14 +4,14 @@
       <div class="footer-section">
         <h3 class="footer-logo">Voxalis</h3>
         <p class="footer-description">
-          Jedes Betrieb verdient eine professionelle, individuelle Webseite, die nicht nur gut aussieht, sondern wirklich zielführend ist- unabhängig vom Budget oder technischer Vorerfahrung
+          Jeder verdient eine professionelle und individuelle Webseite, die nicht nur ansprechend aussieht, sondern wirklich zielführend ist 
         </p>
       </div>
       
       <div class="footer-section">
-        <h4>Services</h4>
+        <h4>Dienste</h4>
         <ul class="footer-links">
-          <li><router-link to="/services/webentwicklung">Websiten Entwicklung</router-link></li>
+          <li><router-link to="/services/webentwicklung">Websitenentwicklung</router-link></li>
           <li><router-link to="/services/socialmediamarketing">Social Media Marketing</router-link></li>
           <!-- <li><router-link to="/services">SEO Optimization</router-link></li> -->
           <!-- <li><router-link to="/services">Content Creation</router-link></li> -->

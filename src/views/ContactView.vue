@@ -9,7 +9,7 @@
             <polyline points="22,6 12,13 2,6"></polyline>
           </svg>
         </div>
-        <h3 class="contact-title">Erreiche uns</h3>
+        <h3 class="contact-title">Erreichen Sie uns</h3>
       </div>
 
       <!-- Contact Items -->

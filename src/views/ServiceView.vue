@@ -5,7 +5,7 @@
       <div class="header-content">
         <h1 class="services-title">Unsere Dienste</h1>
         <p class="services-subtitle">
-          Webseiten mit Charakter und Social Media Marketing, das wirklich ankommt! Mit frischen Ideen und einem Gespür für Trends bringen wir Ihre Marke ins digitale Rampenlicht.
+          Webseiten mit Charakter und ein Social Media Marketing, das wirklich ankommt! Mit frischen Ideen und einem Gespür für Trends bringen wir Ihre Unternehmen / Verein ins digitale Rampenlicht.
         </p>
       </div>
     </div>
@@ -71,7 +71,7 @@
     <!-- Call to Action Section -->
     <div class="cta-section">
       <div class="cta-content">
-        <h2 class="cta-title">Sind Sie bereit, loszulegen?</h2>
+        <h2 class="cta-title">Sind Sie bereit loszulegen?</h2>
         <p class="cta-description">
           Kontaktieren Sie uns noch heute, um Ihre spezifischen Anforderungen zu besprechen und die perfekte Lösung zu finden
         </p>
@@ -80,7 +80,7 @@
             <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
             <polyline points="22,6 12,13 2,6"></polyline>
           </svg>
-          Kontaktieren sie uns
+          Kontaktieren Sie uns
         </RouterLink>
       </div>
     </div>
@@ -96,19 +96,19 @@ import { RouterLink } from 'vue-router'
 const services = ref([
   {
     id: 1,
-    title: 'Web Entwicklung',
+    title: 'Webseitenentwicklung',
     link: '/services/webentwicklung',
     category: 'Development',
-    description: 'Wir entwickeln gemeinsam mit Ihnen eine maßgeschneiderte, professionelle Webseite, die den Charakter Ihres Unternehmens widerspiegelt. In einfacher, partnerschaftlicher Zusammenarbeit schaffen wir einen digitalen Auftritt, der wirkt und begeistert. Zudem übernehmen wir die Verwaltung der Webseite.“ oder „Ihr Unternehmen hat Persönlichkeit – und das soll man sehen! Mit Ihnen gemeinsam programmieren wir eine individuelle Webseite, die Ihren wahren Charakter zeigt. Ganz unkompliziert und mit einem echten Blick fürs Detail. Zudem übernehmen wir die Verwaltung der Webseite.',
+    description: 'Nach Ihren Wünschen und Ideen entwickeln wir eine individuelle und professionelle Webseite. Wir schaffen einen digitalen Auftritt, der wirkt und begeistert. Auf Ihren Wunsch übernehmen wir auch die Verwaltung der Webseite',
     image: '/images/programmingService.jpg',
-    features: ['Ansprechendes Design', 'Einfache Änderungen']
+    features: ['Ansprechendes Design', 'Einfache Änderungen', 'Extra für Sie']
   },
   {
     id: 2,
     title: 'Social Media Marketing',
     link: '/services/socialmediamarketing',
     category: 'Marketing',
-    description: 'Mit unserer umfassenden Erfahrung im Social Media Marketing entwickeln wir gemeinsam mit Ihnen eine individuelle Strategie, die das Wachstum Ihres Unternehmens gezielt fördert. Wir erstellen hochwertige Inhalte und übernehmen die Accountverwaltung – verständlich, effizient und transparent.',
+    description: 'Gemainsam mit Ihnen entwickeln wir eine individuelle Strategie, die das Wachstum Ihres Unternehmens / Vereins gezielt fördert. Wir erstellen hochwertige Inhalte und übernehmen die Accountverwaltung – verständlich, effizient und transparent.',
     image: '/images/marketingService.jpg',
     features: []
   }

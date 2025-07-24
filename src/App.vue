@@ -45,8 +45,10 @@ import PageFooter from './components/common/PageFooter.vue';
   --hover-color: #d1d1d1;
 
   --max-width: 1200px;
-
+  
 }
+
+
 
 @media (prefers-color-scheme: dark) {
     :root {
@@ -77,7 +79,8 @@ html {
 
 
 #app {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; */
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   line-height: 1.6;
   color: var(--text-color);
   min-height: 100vh;
